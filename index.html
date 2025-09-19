@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart To-Do App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 id="appTitle">📝 Smart To-Do App</h1>
+        <p id="quote" aria-live="polite">Loading motivational quote...</p>
+        <button id="themeToggle" aria-label="Toggle theme">🌙 Dark Mode</button>
+    </header>
+
+    <main>
+        <div class="todo-input">
+            <label for="taskInput" class="sr-only">Enter new task</label>
+            <input type="text" id="taskInput" placeholder="Enter a new task" 
+            aria-label="Task input">
+            <button id="addTask" aria-label="Add task">Add Task</button>
+        </div>
+
+        <ul id="taskList"  role="list"></ul>
+    </main>
+
+
+    <footer>
+        <small>&copy; 2025 My To-Do App</small>
+    </footer>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
